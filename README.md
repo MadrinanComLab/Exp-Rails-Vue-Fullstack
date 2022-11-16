@@ -49,4 +49,19 @@ rails d Scaffold
 
 After generating the two scaffolds, we created api/v1 in controller (I know you are familiar with this from previous experiments). Move the generated controller by scaffold the api/v1. Also cover the controller by "module", you'll see that in the code snippet
 
-NOTE: Something notable you can observe in the generated controller from scaffold. You can see the return statements are fixed in a way of how API would work, return data in JSON format
+NOTE: Something notable you can observe in the generated controller from scaffold. You can see the return statements are fixed in a way of how API would work, return data in JSON format.
+
+==================================================================================
+>>> JWT SESSIONS SETUP
+==================================================================================
+The documentation that the tutorial refers to:
+https://github.com/tuwukee/jwt_sessions
+
+First we make some changes in controller/application_controller.rb. Then we created the jwt_sessions.rb in config/initializers. And then, uncomment the necessary code snippet in cors.rb in config/initializers also.
+
+Generate a signup controller
++---------------------------------------------------+
+| rails g controller signup create                  |
++---------------------------------------------------+
+
+After generating, go to controller/signup_controller.rb, you'll see there how to implement JWT Sessions. In the tutorial signin_controller.rb an refresh_controller.rb was manually created.
