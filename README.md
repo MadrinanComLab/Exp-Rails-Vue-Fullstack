@@ -109,3 +109,17 @@ Q: Setup e2e tests with Nightwatch? (Y/n)
 A: n
 Q: Should we run `npm install` for you after the project has been created? (recommended)
 A: Yes, use NPM | NOTE: The tutorial uses Yarn so he pick yarn but since I was using NPM, I pick NPM
+
+After answering the question, the vue folder will be created. To run the frontend enter the following command:
+cd recordstore-frontend
+npm run dev
+
+You app will be on: http://localhost:8080/
+
+NOTE: Since the Vue app will be on port 8080, we have to modify the config/initializers/cors.rb. In there the request will be allowed from localhost:8081, but that is the port in the tutorial, mine was on 8080 so I have to change the cors.rb from 8081 to 8080
+
+==================================================================================
+>>> SETTING UP THE TAILWIND CSS
+==================================================================================
+The tutorial uses Yarn but I use NPM, so I followed the documentation of Tailwind CSS
+Tailwind CSS Documentation: https://tailwindcss.com/docs/installation
