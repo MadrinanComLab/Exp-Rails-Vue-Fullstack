@@ -65,3 +65,14 @@ Generate a signup controller
 +---------------------------------------------------+
 
 After generating, go to controller/signup_controller.rb, you'll see there how to implement JWT Sessions. In the tutorial signin_controller.rb an refresh_controller.rb was manually created.
+
+==================================================================================
+>>> ADDING SAMPLE DATA
+==================================================================================
+In this part, the first thing the tutorial has done is define new routes in routes.rb for Vue JS later. and then modify artists_controller.rb, records_controller.rb and home_controller.rb
+
+In the tutorial, it creates dummy data by running:
+Artist.create!(name: "AC/DC")
+
+If you try running the command in rails console and encounter an error, check your migration file if it was similar to the repo of the tutorial.
+The link of the repo: https://github.com/justalever/recordstore

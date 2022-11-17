@@ -2,7 +2,7 @@ class ApplicationController < ActionController::API
     include JWTSessions::RailsAuthorization # THIS WAS ADDED TO BE ABLE TO USE JWT SESSIONS
 
     # WE CALL 'not_authorized' METHOD TO REACT ON UNAUTHORIZE ERROR OF JWT SESSION
-    rescue_from JWTSessions::Errors::Unauthorized, with :not_authorized 
+    rescue_from JWTSessions::Errors::Unauthorized, with: :not_authorized 
 
     private 
         def current_user # THIS IS A PRIVATE METHOD
