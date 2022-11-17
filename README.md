@@ -76,3 +76,36 @@ Artist.create!(name: "AC/DC")
 
 If you try running the command in rails console and encounter an error, check your migration file if it was similar to the repo of the tutorial.
 The link of the repo: https://github.com/justalever/recordstore
+
+==================================================================================
+>>> SETTING UP THE FRONTEND (VUE JS)
+==================================================================================
+Command for creating the Vue JS Project:
+vue init webpack recordstore-frontend
+
+In case the command didn't accept by the CLI, run this as suggested in the terminal. After running the command below, run the command above:
+npm i -g @vue/cli-init
+
+The following question will appear just do the following:
+Q: Project name (recordstore-frontend)
+A: Press 'Enter'
+Q: Project description (A Vue.js project)
+A: A Vue.js front-end app for a Ruby on Rails API backend app. 
+Q: Author (MadrinanComLab <johncliffordmadrinan838@gmail.com>)
+A: Press 'Enter' in my case but you can type out whatever Name and Email you want to use
+Q: Runtime-only: about 6KB lighter min+gzip, but templates (or any Vue-specific HTML) are ONLY allowed in .vue files - render functions are required elsewhere
+A: Press 'Enter'
+Q: Install vue-router? (Y/n)
+A: Y
+Q: Use ESLint to lint your code? (Y/n) 
+A: Y
+Q: Pick an ESLint preset (Use arrow keys)
+A: Pick "Standard", Ex.: Standard (https://github.com/standard/standard)
+Q: Set up unit tests (Y/n)       
+A: Y
+Q: Pick a test runner
+A: Karma and Mocha
+Q: Setup e2e tests with Nightwatch? (Y/n) 
+A: n
+Q: Should we run `npm install` for you after the project has been created? (recommended)
+A: Yes, use NPM | NOTE: The tutorial uses Yarn so he pick yarn but since I was using NPM, I pick NPM
