@@ -118,8 +118,28 @@ You app will be on: http://localhost:8080/
 
 NOTE: Since the Vue app will be on port 8080, we have to modify the config/initializers/cors.rb. In there the request will be allowed from localhost:8081, but that is the port in the tutorial, mine was on 8080 so I have to change the cors.rb from 8081 to 8080
 
+ANOTHER NOTE: From this and beyond, while working on recordstore-frontend use single quote for strings because double quote for strings is against the rule of ESLint. I'm giving an emphasis to this because if you are like me that used to using double quote for strings.
+
+FVCKIN' NOTE: DO NOT USE ESLINT AT ALL, IT WILL GIVE YOU A HELL
+
 ==================================================================================
 >>> SETTING UP THE TAILWIND CSS
 ==================================================================================
 The tutorial uses Yarn but I use NPM, so I followed the documentation of Tailwind CSS
 Tailwind CSS Documentation: https://tailwindcss.com/docs/installation
+
+Just follow the documentation, input.css will be instructed to be made in recordstore-frontend/src and import this in main.js
+
+recordstore-frontend/.postcssrc.js was added "tailwindcss"
+
+==================================================================================
+>>> SETTING UP VUE-AXIOS
+==================================================================================
+To install in run:
+npm install --save axios vue-axios
+
+Documentation for setting up Vue-axios: https://www.npmjs.com/package/vue-axios
+
+Then import vue-axios to main.js
+
+In recordstore-frontend/src backend/axios/index.js was created.
