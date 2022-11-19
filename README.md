@@ -126,11 +126,30 @@ FVCKIN' NOTE: DO NOT USE ESLINT AT ALL, IT WILL GIVE YOU A HELL
 >>> SETTING UP THE TAILWIND CSS
 ==================================================================================
 The tutorial uses Yarn but I use NPM, so I followed the documentation of Tailwind CSS
-Tailwind CSS Documentation: https://tailwindcss.com/docs/installation
+Tailwind CSS Documentation: https://tailwindcss.com/docs/guides/vite#vue
 
 Just follow the documentation, input.css will be instructed to be made in recordstore-frontend/src and import this in main.js
 
+NOTE: In the documentation, skip the part of #1 Create your project. Follow the documentation from #2
+
 recordstore-frontend/.postcssrc.js was added "tailwindcss"
+
+To watch the changes of tailwind in our component, run this command to your terminal: (make sure you are on recordstore-frontend)
+npx tailwindcss-cli build -i ./src/input.css -o ./dist/output.css --watch
+
+Breakdown of the command:
+-i means "input", your input.css can be name however you want and it was located "src" folder
+-o means "input", it will be generated once the tailwind was setup to your project (finished following the documentation of tailwind installation and it was located on "dist" folder and the file name is output.css)
+
+NOTE: You may encounter a quite different command that looks like this:
+npx tailwindcss build -i ./src/input.css -o ./dist/output.css --watch
+
+The problem is, it will generate a few hundred lines of code in output.css, where it should be a thousand lines. You must run the command where 'tailwindcss-cli' is present because that will generate the correct amount of lines for output.css
+
+Source: https://stackoverflow.com/questions/70337770/tailwindcss-output-css-file-424-lines
+
+Another note: (My apologies if there a lot of fvckin' note)
+Sometimes, tailwind utility classes may not work even it was present in output.css, but try restarting your Vue app and see if the style of your component changes. If not, look for solution on the internet.
 
 ==================================================================================
 >>> SETTING UP VUE-AXIOS
@@ -143,3 +162,13 @@ Documentation for setting up Vue-axios: https://www.npmjs.com/package/vue-axios
 Then import vue-axios to main.js
 
 In recordstore-frontend/src backend/axios/index.js was created.
+
+==================================================================================
+>>> CREATING FIRST VUE COMPONENT
+==================================================================================
+Start on adding new route to recordstore-frontend/src/router/index.js for Signin.vue.
+
+==================================================================================
+>>> CREATING ARTIST VUE COMPONENT
+==================================================================================
+Signup.vue and Header.vue was created.
