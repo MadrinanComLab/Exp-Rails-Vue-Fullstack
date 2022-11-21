@@ -10,12 +10,12 @@ First thing we do is setup the Rails into an API. The tutorial uses SQLite & wit
 |&nbsp;rails new recordstore-backend --api -d=postgresql&nbsp;&nbsp;&nbsp;| </br>
 +---------------------------------------------------------+ </br>
  </br>
-After the project is done generating, we add "net-smtp" to the "Gemfile". Then save this changes by running bundle install.
+After the project is done generating, we add "net-smtp" to the "Gemfile". Then save this changes by running bundle install.</br></br>
 
-The config/database.yml was modified to be able to use PostgreSQL in this experiment. Once the configuration was done, run this command:
-+---------------------------------------------------+
-| rake db:create                                    |
-+---------------------------------------------------+
+The config/database.yml was modified to be able to use PostgreSQL in this experiment. Once the configuration was done, run this command:</br>
++---------------------------------------------------+</br>
+| rake db:create&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</br>
++---------------------------------------------------+</br>
 
 There's a big possibility that an error will occur, but check pgAdmin and check if the expected database was created. If it wasn't there, mind the error and look for possible solution.
 
