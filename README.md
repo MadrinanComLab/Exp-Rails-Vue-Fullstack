@@ -14,7 +14,7 @@ After the project is done generating, we add "net-smtp" to the "Gemfile". Then s
 
 The config/database.yml was modified to be able to use PostgreSQL in this experiment. Once the configuration was done, run this command:</br>
 +---------------------------------------------------+</br>
-| rake db:create&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</br>
+| rake db:create&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</br>
 +---------------------------------------------------+</br>
 
 There's a big possibility that an error will occur, but check pgAdmin and check if the expected database was created. If it wasn't there, mind the error and look for possible solution.
