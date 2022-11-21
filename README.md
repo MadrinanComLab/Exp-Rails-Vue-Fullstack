@@ -6,9 +6,7 @@ November 14, 2022 </br>
 
 ## Here is the following steps that how I created this project:
 ### SETTING UP RAILS API
-
 ----
-
 First thing we do is setup the Rails into an API. The tutorial uses SQLite & with the current status of our machine that is not possible. Instead, we do the following: </br>
 Rails Command
 -------------------------------------------------|
@@ -24,10 +22,12 @@ rake db:create|</br></br>
 There's a big possibility that an error will occur, but check pgAdmin and check if the expected database was created. If it wasn't there, mind the error and look for possible solution.</br>
 
 ### ADDITIONAL SETUPS BASE ON THE TUTORIAL
+----
 Base on the tutorial, additional libraries will be needed and was added on Gemfile. There's a comment on it so you'll see it easily. After adding it run the command bundle.
 </br></br>
 
 ### GENERATING THE USER MODEL
+----
 Generate user model with email and password_digest. It says that password_digest is for encrypted password (?).</br>
 
 Some modification was made in migration file for User model and after that we run rails db:migrate</br>
@@ -35,6 +35,7 @@ Some modification was made in migration file for User model and after that we ru
 In app/models/user.rb, has_secure_password was added on that.</br></br>
 
 ### GENERATING SCAFFOLDS AND PREPARING THE CONTROLLERS
+----
 After these changes, the person in the tutorial wants to add a controller but he does scaffold instead: (Controller will come along in this command)
 Rails Command
 -------------------------------------------------|
@@ -51,6 +52,7 @@ After generating the two scaffolds, we created api/v1 in controller (I know you 
 ***NOTE:*** Something notable you can observe in the generated controller from scaffold. You can see the return statements are fixed in a way of how API would work, return data in JSON format.</br></br>
 
 ### JWT SESSIONS SETUP
+----
 The documentation that the tutorial refers to:</br>
 https://github.com/tuwukee/jwt_sessions </br>
 
@@ -64,6 +66,7 @@ Rails Command
 After generating, go to controller/signup_controller.rb, you'll see there how to implement JWT Sessions. In the tutorial signin_controller.rb an refresh_controller.rb was manually created.</br>
 
 ### ADDING SAMPLE DATA
+----
 In this part, the first thing the tutorial has done is define new routes in routes.rb for Vue JS later. and then modify artists_controller.rb, records_controller.rb and home_controller.rb</br>
 
 In the tutorial, it creates dummy data by running:</br>
@@ -75,6 +78,7 @@ If you try running the command in rails console and encounter an error, check yo
 The link of the repo: https://github.com/justalever/recordstore </br>
 
 ### SETTING UP THE FRONTEND (VUE JS)
+----
 Command for creating the Vue JS Project:</br>
 NPM Command
 -------------------------------------------------|
@@ -123,7 +127,8 @@ You app will be on: http://localhost:8080/ </br>
 
 ***FVCKIN' NOTE:*** DO NOT USE ESLINT AT ALL, IT WILL GIVE YOU A HELL</br>
 
-## SETTING UP THE TAILWIND CSS
+### SETTING UP THE TAILWIND CSS
+----
 The tutorial uses Yarn but I use NPM, so I followed the documentation of Tailwind CSS</br>
 Tailwind CSS Documentation: https://tailwindcss.com/docs/guides/vite#vue </br></br>
 
@@ -154,7 +159,8 @@ The problem is, it will generate a few hundred lines of code in output.css, wher
 ***Another note:*** (My apologies if there a lot of fvckin' note)</br>
 Sometimes, tailwind utility classes may not work even it was present in output.css, but try restarting your Vue app and see if the style of your component changes. If not, look for solution on the internet.</br>
 
-## SETTING UP VUE-AXIOS
+### SETTING UP VUE-AXIOS
+----
 To install in run:
 NPM Command
 -------------------------------------------------|
@@ -166,11 +172,13 @@ Then import vue-axios to main.js </br>
 
 In recordstore-frontend/src backend/axios/index.js was created. </br>
 
-## CREATING VUE COMPONENTS
+### CREATING VUE COMPONENTS
+----
 Start on adding new route to recordstore-frontend/src/router/index.js for Signin.vue. </br>
 Signup.vue and Header.vue was created.</br>
 
-## IT's DEBUGGING TIME!
+### IT's DEBUGGING TIME!
+----
 ***NOTE:*** The final video was rubbish, read the comments on the final video and look for some helpful comments</br>
 I know this is bullshit, so I'll be writing this part of Readme so you won't spent lots of time trying to debug and run it.</br>
 
