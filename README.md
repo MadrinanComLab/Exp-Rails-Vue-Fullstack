@@ -28,18 +28,20 @@ Base on the tutorial, additional libraries will be needed and was added on Gemfi
 ==================================================================================</br>
 ## GENERATING THE USER MODEL</br>
 ==================================================================================</br>
-Generate user model with email and password_digest. It says that password_digest is for encrypted password (?).
+Generate user model with email and password_digest. It says that password_digest is for encrypted password (?).</br></br>
 
-Some modification was made in migration file for User model and after that we run rails db:migrate
+Some modification was made in migration file for User model and after that we run rails db:migrate</br></br>
 
-In app/models/user.rb, has_secure_password was added on that.
+In app/models/user.rb, has_secure_password was added on that.</br></br>
 
-==================================================================================
->>> GENERATING SCAFFOLDS AND PREPARING THE CONTROLLERS
-==================================================================================
+==================================================================================</br>
+## GENERATING SCAFFOLDS AND PREPARING THE CONTROLLERS</br>
+==================================================================================</br>
 After these changes, the person in the tutorial wants to add a controller but he does scaffold instead: (Controller will come along in this command)
-rails g scaffold Artist name:string user:references
-rails g scaffold Record title:string year:string artist:references user:references
+Rails Command
+-------------------------------------------------|
+rails g scaffold Artist name:string user:references|</br></br>
+rails g scaffold Record title:string year:string artist:references user:references|</br></br>
 
 NOTE: We can undo the generated file for example, undoing the rails g Scaffold Artist name, you can run the following command:
 rails d Scaffold 
