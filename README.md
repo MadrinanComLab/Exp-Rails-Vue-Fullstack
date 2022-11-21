@@ -7,7 +7,7 @@ November 14, 2022 </br> </br>
 =========================================================================== </br>
 First thing we do is setup the Rails into an API. The tutorial uses SQLite & with the current status of our machine that is not possible. Instead, we do the following: </br>
 +---------------------------------------------------------+ </br>
-| rails new recordstore-backend --api -d=postgresql    | </br>
+|&nbsp;rails new recordstore-backend --api -d=postgresql&nbsp;&nbsp;&nbsp;| </br>
 +---------------------------------------------------------+ </br>
  </br>
 After the project is done generating, we add "net-smtp" to the "Gemfile". Then save this changes by running bundle install.
