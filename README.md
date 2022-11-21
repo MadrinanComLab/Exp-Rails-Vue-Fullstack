@@ -115,71 +115,69 @@ You app will be on: http://localhost:8080/ </br>
 
 ***ANOTHER NOTE:*** From this and beyond, while working on recordstore-frontend use single quote for strings because double quote for strings is against the rule of ESLint. I'm giving an emphasis to this because if you are like me that used to using double quote for strings.
 
-***FVCKIN' NOTE:*** DO NOT USE ESLINT AT ALL, IT WILL GIVE YOU A HELL
+***FVCKIN' NOTE:*** DO NOT USE ESLINT AT ALL, IT WILL GIVE YOU A HELL</br>
 
-==================================================================================
->>> SETTING UP THE TAILWIND CSS
-==================================================================================
-The tutorial uses Yarn but I use NPM, so I followed the documentation of Tailwind CSS
-Tailwind CSS Documentation: https://tailwindcss.com/docs/guides/vite#vue
+## SETTING UP THE TAILWIND CSS
+The tutorial uses Yarn but I use NPM, so I followed the documentation of Tailwind CSS</br>
+Tailwind CSS Documentation: https://tailwindcss.com/docs/guides/vite#vue </br></br>
 
-Just follow the documentation, input.css will be instructed to be made in recordstore-frontend/src and import this in main.js
+Just follow the documentation, input.css will be instructed to be made in recordstore-frontend/src and import this in main.js</br>
 
-NOTE: In the documentation, skip the part of #1 Create your project. Follow the documentation from #2
+***NOTE:*** In the documentation, skip the part of #1 Create your project. Follow the documentation from #2</br>
 
-recordstore-frontend/.postcssrc.js was added "tailwindcss"
+recordstore-frontend/.postcssrc.js was added "tailwindcss"</br></br>
 
-To watch the changes of tailwind in our component, run this command to your terminal: (make sure you are on recordstore-frontend)
-npx tailwindcss-cli build -i ./src/input.css -o ./dist/output.css --watch
+To watch the changes of tailwind in our component, run this command to your terminal: (make sure you are on recordstore-frontend)</br>
+NPM Command
+-------------------------------------------------|
+npx tailwindcss-cli build -i ./src/input.css -o ./dist/output.css --watch|</br>
 
-Breakdown of the command:
--i means "input", your input.css can be name however you want and it was located "src" folder
--o means "input", it will be generated once the tailwind was setup to your project (finished following the documentation of tailwind installation and it was located on "dist" folder and the file name is output.css)
+***Breakdown of the command:***
+-i means "input", your input.css can be name however you want and it was located "src" folder</br>
+-o means "input", it will be generated once the tailwind was setup to your project (finished following the documentation of tailwind installation and it was located on "dist" folder and the file name is output.css)</br>
 
-NOTE: You may encounter a quite different command that looks like this:
-npx tailwindcss build -i ./src/input.css -o ./dist/output.css --watch
+***NOTE:*** You may encounter a quite different command that looks like this:
+NPM Command
+-------------------------------------------------|
+npx tailwindcss build -i ./src/input.css -o ./dist/output.css --watch|</br>
 
-The problem is, it will generate a few hundred lines of code in output.css, where it should be a thousand lines. You must run the command where 'tailwindcss-cli' is present because that will generate the correct amount of lines for output.css
+The problem is, it will generate a few hundred lines of code in output.css, where it should be a thousand lines. You must run the command where 'tailwindcss-cli' is present because that will generate the correct amount of lines for output.css</br></br>
 
-Source: https://stackoverflow.com/questions/70337770/tailwindcss-output-css-file-424-lines
+***Source:*** https://stackoverflow.com/questions/70337770/tailwindcss-output-css-file-424-lines </br>
 
-Another note: (My apologies if there a lot of fvckin' note)
-Sometimes, tailwind utility classes may not work even it was present in output.css, but try restarting your Vue app and see if the style of your component changes. If not, look for solution on the internet.
+***Another note:*** (My apologies if there a lot of fvckin' note)</br>
+Sometimes, tailwind utility classes may not work even it was present in output.css, but try restarting your Vue app and see if the style of your component changes. If not, look for solution on the internet.</br>
 
-==================================================================================
->>> SETTING UP VUE-AXIOS
-==================================================================================
+## SETTING UP VUE-AXIOS
 To install in run:
-npm install --save axios vue-axios
+NPM Command
+-------------------------------------------------|
+npm install --save axios vue-axios|</br>
 
-Documentation for setting up Vue-axios: https://www.npmjs.com/package/vue-axios
+Documentation for setting up Vue-axios: https://www.npmjs.com/package/vue-axios </br>
 
-Then import vue-axios to main.js
+Then import vue-axios to main.js </br>
 
-In recordstore-frontend/src backend/axios/index.js was created.
+In recordstore-frontend/src backend/axios/index.js was created. </br>
 
-==================================================================================
->>> CREATING VUE COMPONENTS
-==================================================================================
-Start on adding new route to recordstore-frontend/src/router/index.js for Signin.vue. 
-Signup.vue and Header.vue was created.
+## CREATING VUE COMPONENTS
+Start on adding new route to recordstore-frontend/src/router/index.js for Signin.vue. </br>
+Signup.vue and Header.vue was created.</br>
 
-==================================================================================
->>> IT's DEBUGGING TIME!
-==================================================================================
-NOTE: The end was rubbish, read the comments on the final video and look for some helpful comments
-I know this is bullshit, so I'll be writing this part of Readme so you won't spent lots of time trying to debug and run it.
+## IT's DEBUGGING TIME!
+***NOTE:*** The final video was rubbish, read the comments on the final video and look for some helpful comments</br>
+I know this is bullshit, so I'll be writing this part of Readme so you won't spent lots of time trying to debug and run it.</br>
 
-1.) First thing I fix was recordstore-frontend/src/main.js.
-2.) We don't have redis but this application uses redis to store the JWT. Here is the following sources that you can use to download Redis but note that I am a Windows 10 User so the source that I'll be giving might not relevant to you:
-Tutorial Guide:
-https://www.youtube.com/watch?v=6mtu_dFxm28
-Where to download Redis:
-https://github.com/microsoftarchive/redis/releases
+1.) First thing I fix was recordstore-frontend/src/main.js.</br>
+2.) Computer doesn't have redis but this application uses redis to store the JWT. Here is the following sources (in case you don't have redis too) that you can use to download Redis but note that I am a Windows 10 User so the source that I'll be giving might not relevant to you:</br>
+Tutorial Guide:</br>
+https://www.youtube.com/watch?v=6mtu_dFxm28 </br>
+Where to download Redis:</br>
+https://github.com/microsoftarchive/redis/releases </br>
 
-Note for #2: You don't have to follow the tutorial video until the end, the only thing you need to do is run the redis-server.exe then this app will work again.
+***Note for #2:*** You don't have to follow the tutorial video until the end, the only thing you need to do is run the redis-server.exe then this app will work again.</br>
 
-3.) You will try saving your first record, if an internal error was thrown go to records_controller.rb and find the if @record.save. Once you see it, remove ", location: @record" in "render json: @record, status: :created, location: @record"
+3.) You will try saving your first record, if an internal error was thrown go to records_controller.rb and find the if @record.save. Once you see it, remove ", location: @record" in "render json: @record, status: :created, location: @record"</br>
 
-You can see the source code of the tutorial that we're following on this experiment right here:
+You can see the source code of the tutorial that we're following on this experiment right here:</br>
 https://github.com/justalever/recordstore/blob/master/app/controllers/api/v1/records_controller.rb
