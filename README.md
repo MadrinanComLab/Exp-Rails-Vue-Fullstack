@@ -6,7 +6,11 @@ November 14, 2022 </br>
  
  ## Technologies used in this Project:
  <p>
- <img src="https://user-images.githubusercontent.com/74145874/203150268-0c0e6843-af70-4705-b232-d6ef740f3090.png" width="100px" height="100px" alt="HTML" title="HTML"/>
+ <img src="https://user-images.githubusercontent.com/74145874/203150268-0c0e6843-af70-4705-b232-d6ef740f3090.png" width="100px" height="100px" alt="Ruby on Rails" title="Ruby on Rails"/>
+ <img src="https://user-images.githubusercontent.com/74145874/203150691-6cdb51ef-bbb8-45a5-9ad9-be9cd7d379ce.png" width="100px" height="100px" alt="Vue JS" title="Vue JS"/>
+ <img src="https://user-images.githubusercontent.com/74145874/203151252-c9855797-b043-4385-82c7-4986cfdd222e.png" width="100px" height="100px" alt="Tailwind CSS" title="Tailwind CSS"/>
+ <img src="https://user-images.githubusercontent.com/74145874/196059473-011117c1-e31d-4c5e-be6b-0a81b6d4f431.png" width="100px" height="100px" alt="PostgreSQL" title="PostgreSQL"/>
+ <img src="https://user-images.githubusercontent.com/74145874/203151509-0c00a967-5966-40c9-87c1-6e64ba617a61.png" width="100px" height="100px" alt="Redis" title="Redis"/>
 </p>
 
 ## Here is the following steps that how I created this project:
