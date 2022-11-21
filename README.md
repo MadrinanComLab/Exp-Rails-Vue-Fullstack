@@ -6,14 +6,16 @@ November 14, 2022 </br> </br>
 ## SETTING UP RAILS API </br>
 =========================================================================== </br>
 First thing we do is setup the Rails into an API. The tutorial uses SQLite & with the current status of our machine that is not possible. Instead, we do the following: </br>
-Command
+Rails Command
 -------------------------------------------------|
 rails new recordstore-backend --api -d=postgresql| </br>
  </br>
 After the project is done generating, we add "net-smtp" to the "Gemfile". Then save this changes by running bundle install.</br></br>
 
 The config/database.yml was modified to be able to use PostgreSQL in this experiment. Once the configuration was done, run this command:</br>
-rake db:create</br></br>
+Rails Command
+-------------------------------------------------|
+rake db:create|</br></br>
 
 There's a big possibility that an error will occur, but check pgAdmin and check if the expected database was created. If it wasn't there, mind the error and look for possible solution.</br>
 
