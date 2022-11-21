@@ -28,9 +28,9 @@ Base on the tutorial, additional libraries will be needed and was added on Gemfi
 ==================================================================================</br>
 ## GENERATING THE USER MODEL</br>
 ==================================================================================</br>
-Generate user model with email and password_digest. It says that password_digest is for encrypted password (?).</br></br>
+Generate user model with email and password_digest. It says that password_digest is for encrypted password (?).</br>
 
-Some modification was made in migration file for User model and after that we run rails db:migrate</br></br>
+Some modification was made in migration file for User model and after that we run rails db:migrate</br>
 
 In app/models/user.rb, has_secure_password was added on that.</br></br>
 
@@ -43,7 +43,7 @@ Rails Command
 rails g scaffold Artist name:string user:references|</br></br>
 rails g scaffold Record title:string year:string artist:references user:references|</br></br>
 
-NOTE: We can undo the generated file for example, undoing the rails g Scaffold Artist name, you can run the following command:
+***NOTE:*** We can undo the generated file for example, undoing the rails g Scaffold Artist name, you can run the following command:
 rails d Scaffold 
 
 After generating the two scaffolds, we created api/v1 in controller (I know you are familiar with this from previous experiments). Move the generated controller by scaffold the api/v1. Also cover the controller by "module", you'll see that in the code snippet
