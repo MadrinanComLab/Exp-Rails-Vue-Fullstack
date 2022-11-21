@@ -10,7 +10,7 @@ November 14, 2022 </br>
  <img src="https://user-images.githubusercontent.com/74145874/203150691-6cdb51ef-bbb8-45a5-9ad9-be9cd7d379ce.png" width="100px" height="100px" alt="Vue JS" title="Vue JS"/>
  <img src="https://user-images.githubusercontent.com/74145874/203151252-c9855797-b043-4385-82c7-4986cfdd222e.png" width="100px" height="100px" alt="Tailwind CSS" title="Tailwind CSS"/>
  <img src="https://user-images.githubusercontent.com/74145874/196059473-011117c1-e31d-4c5e-be6b-0a81b6d4f431.png" width="100px" height="100px" alt="PostgreSQL" title="PostgreSQL"/>
- <img src="https://user-images.githubusercontent.com/74145874/203151509-0c00a967-5966-40c9-87c1-6e64ba617a61.png" width="100px" height="100px" alt="Redis" title="Redis"/>
+ <img src="https://user-images.githubusercontent.com/74145874/203151709-b137020a-06b0-4853-a95a-2ce77c86b918.png" width="100px" height="100px" alt="Redis" title="Redis"/>
 </p>
 
 ## Here is the following steps that how I created this project:
