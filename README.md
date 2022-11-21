@@ -48,58 +48,60 @@ After generating the two scaffolds, we created api/v1 in controller (I know you 
 The documentation that the tutorial refers to:</br>
 https://github.com/tuwukee/jwt_sessions </br>
 
-First we make some changes in controller/application_controller.rb. Then we created the jwt_sessions.rb in config/initializers. And then, uncomment the necessary code snippet in cors.rb in config/initializers also.
+First we make some changes in controller/application_controller.rb. Then we created the jwt_sessions.rb in config/initializers. And then, uncomment the necessary code snippet in cors.rb in config/initializers also.</br>
 
-Generate a signup controller
-+---------------------------------------------------+
-| rails g controller signup create                  |
-+---------------------------------------------------+
+Generate a signup controller</br>
+Rails Command
+-------------------------------------------------|
+| rails g controller signup create|</br>
 
-After generating, go to controller/signup_controller.rb, you'll see there how to implement JWT Sessions. In the tutorial signin_controller.rb an refresh_controller.rb was manually created.
+After generating, go to controller/signup_controller.rb, you'll see there how to implement JWT Sessions. In the tutorial signin_controller.rb an refresh_controller.rb was manually created.</br>
 
-==================================================================================
->>> ADDING SAMPLE DATA
-==================================================================================
-In this part, the first thing the tutorial has done is define new routes in routes.rb for Vue JS later. and then modify artists_controller.rb, records_controller.rb and home_controller.rb
+## ADDING SAMPLE DATA
+In this part, the first thing the tutorial has done is define new routes in routes.rb for Vue JS later. and then modify artists_controller.rb, records_controller.rb and home_controller.rb</br>
 
-In the tutorial, it creates dummy data by running:
-Artist.create!(name: "AC/DC")
+In the tutorial, it creates dummy data by running:</br>
+Rails 'Console' Command
+-------------------------------------------------|
+Artist.create!(name: "AC/DC")|</br>
 
-If you try running the command in rails console and encounter an error, check your migration file if it was similar to the repo of the tutorial.
-The link of the repo: https://github.com/justalever/recordstore
+If you try running the command in rails console and encounter an error, check your migration file if it was similar to the repo of the tutorial.</br>
+The link of the repo: https://github.com/justalever/recordstore </br>
 
-==================================================================================
->>> SETTING UP THE FRONTEND (VUE JS)
-==================================================================================
-Command for creating the Vue JS Project:
-vue init webpack recordstore-frontend
+## SETTING UP THE FRONTEND (VUE JS)
+Command for creating the Vue JS Project:</br>
+NPM Command
+-------------------------------------------------|
+vue init webpack recordstore-frontend|</br>
 
-In case the command didn't accept by the CLI, run this as suggested in the terminal. After running the command below, run the command above:
-npm i -g @vue/cli-init
+In case the command didn't accept by the CLI, run this as suggested in the terminal. After running the command below, run the command above:</br>
+NPM Command
+-------------------------------------------------|
+npm i -g @vue/cli-init|</br>
 
-The following question will appear just do the following:
-Q: Project name (recordstore-frontend)
-A: Press 'Enter'
-Q: Project description (A Vue.js project)
-A: A Vue.js front-end app for a Ruby on Rails API backend app. 
-Q: Author (MadrinanComLab <johncliffordmadrinan838@gmail.com>)
-A: Press 'Enter' in my case but you can type out whatever Name and Email you want to use
-Q: Runtime-only: about 6KB lighter min+gzip, but templates (or any Vue-specific HTML) are ONLY allowed in .vue files - render functions are required elsewhere
-A: Press 'Enter'
-Q: Install vue-router? (Y/n)
-A: Y
-Q: Use ESLint to lint your code? (Y/n) 
-A: Y
-Q: Pick an ESLint preset (Use arrow keys)
-A: Pick "Standard", Ex.: Standard (https://github.com/standard/standard)
-Q: Set up unit tests (Y/n)       
-A: Y
-Q: Pick a test runner
-A: Karma and Mocha
-Q: Setup e2e tests with Nightwatch? (Y/n) 
-A: n
-Q: Should we run `npm install` for you after the project has been created? (recommended)
-A: Yes, use NPM | NOTE: The tutorial uses Yarn so he pick yarn but since I was using NPM, I pick NPM
+The following question will appear just do the following:</br>
+***Q:*** Project name (recordstore-frontend)</br>
+***A:*** Press 'Enter'
+***Q:*** Project description (A Vue.js project)
+***A:*** A Vue.js front-end app for a Ruby on Rails API backend app. 
+***Q:*** Author (MadrinanComLab <johncliffordmadrinan838@gmail.com>)
+***A:*** Press 'Enter' in my case but you can type out whatever Name and Email you want to use
+***Q:*** Runtime-only: about 6KB lighter min+gzip, but templates (or any Vue-specific HTML) are ONLY allowed in .vue files - render functions are required elsewhere
+***A:*** Press 'Enter'
+***Q:*** Install vue-router? (Y/n)
+***A:*** Y
+***Q:*** Use ESLint to lint your code? (Y/n) 
+***A:*** Y
+***Q:*** Pick an ESLint preset (Use arrow keys)
+***A:*** Pick "Standard", Ex.: Standard (https://github.com/standard/standard)
+***Q:*** Set up unit tests (Y/n)       
+***A:*** Y
+***Q:*** Pick a test runner
+***A:*** Karma and Mocha
+***Q:*** Setup e2e tests with Nightwatch? (Y/n) 
+***A:*** n
+***Q:*** Should we run `npm install` for you after the project has been created? (recommended)
+***A:*** Yes, use NPM | NOTE: The tutorial uses Yarn so he pick yarn but since I was using NPM, I pick NPM
 
 After answering the question, the vue folder will be created. To run the frontend enter the following command:
 cd recordstore-frontend
