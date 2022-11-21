@@ -13,6 +13,10 @@ November 14, 2022 </br>
  <img src="https://user-images.githubusercontent.com/74145874/203151709-b137020a-06b0-4853-a95a-2ce77c86b918.png" width="100px" height="100px" alt="Redis" title="Redis"/>
 </p>
 
+## How to run this project:
+1.) You need Ruby and Rails installed to your machine, once it was done run rails s and this is how it look like if the command succeed:
+![run-rails](https://user-images.githubusercontent.com/74145874/203152796-eae44a00-a8a2-4df5-92e0-5bd4b97c7c87.png)
+
 ## Here is the following steps that how I created this project:
 ### SETTING UP RAILS API
 ----
