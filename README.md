@@ -19,11 +19,11 @@ rake db:create|</br></br>
 
 There's a big possibility that an error will occur, but check pgAdmin and check if the expected database was created. If it wasn't there, mind the error and look for possible solution.</br>
 
--------------- END OF POSTRESQL AND API CONFIGURATION --------------
+-------------- END OF POSTRESQL AND API CONFIGURATION --------------</br></br>
 
-==================================================================================
->>> ADDITIONAL SETUPS BASE ON THE TUTORIAL
-==================================================================================
+==================================================================================</br>
+## ADDITIONAL SETUPS BASE ON THE TUTORIAL</br>
+==================================================================================</br>
 Base on the tutorial, additional libraries will be needed and was added on Gemfile. There's a comment on it so you'll see it easily. After adding it run the command bundle.
 
 -------------- END OF ADDITIONAL SETUPS --------------
