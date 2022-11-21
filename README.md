@@ -6,6 +6,9 @@ November 14, 2022 </br>
 
 ## Here is the following steps that how I created this project:
 ### SETTING UP RAILS API
+
+----
+
 First thing we do is setup the Rails into an API. The tutorial uses SQLite & with the current status of our machine that is not possible. Instead, we do the following: </br>
 Rails Command
 -------------------------------------------------|
