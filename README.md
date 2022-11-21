@@ -3,8 +3,8 @@ Tutorial Source: https://www.youtube.com/watch?v=TBZwkWznhZs&list=PLQIWx2J-GIASp
 November 14, 2022
 
 =========================================================================== </br>
->>> SETTING UP RAILS API
-===========================================================================
+>>> SETTING UP RAILS API </br>
+=========================================================================== </br>
 First thing we do is setup the Rails into an API. The tutorial uses SQLite & with the current status of our machine that is not possible. Instead, we do the following:
 +---------------------------------------------------+
 | rails new recordstore-backend --api -d=postgresql |
