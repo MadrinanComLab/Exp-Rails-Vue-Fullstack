@@ -4,7 +4,7 @@
           <h3 class="text-2xl mb-6 text-gray-900">Sign Up</h3>
 
           <form @submit.prevent="signup">
-            <div class="text-red" v-if="error">{{ error }}</div>
+            <div class="text-red-500 text-center" v-if="error">{{ error }}</div>
 
             <div class="mb-6">
               <label for="email">Email Address:</label>
@@ -13,12 +13,12 @@
 
             <div class="mb-6">
               <label for="password">Password:</label>
-              <input type="password" v-model="confirm_password" id="password" placeholder="Enter your password" class="bg-gray-200 block p-1 w-full rounded-sm">
+              <input type="password" v-model="password" id="password" placeholder="Enter your password" class="bg-gray-200 block p-1 w-full rounded-sm">
             </div>
 
             <div class="mb-6">
-              <label for="confirm_password">Confirm Password:</label>
-              <input type="password" v-model="password" id="confirm_password" placeholder="Re-enter your password" class="bg-gray-200 block p-1 w-full rounded-sm">
+              <label for="password_confirmation">Confirm Password:</label>
+              <input type="password" v-model="password_confirmation" id="password_confirmation" placeholder="Re-enter your password" class="bg-gray-200 block p-1 w-full rounded-sm">
             </div>
 
             <button type="submit" class="font-sans font-bold px-1 rounded cursor-pointer no-underline bg-green-500 hover:bg-green-700 block w-full py-2 text-white items-center justify-center">
@@ -38,9 +38,9 @@ export default {
   name: 'Signup',
   data () {
     return {
-      email: '',
-      password: '',
-      confirm_password: '',
+      email: 'john@example.com',
+      password: '12345678',
+      password_confirmation: '12345678',
       error: ''
     }
   },
@@ -51,17 +51,16 @@ export default {
     this.checkSignedIn()
   },
   methods: {
-    signin () {
+    signup () {
       /* plain WAS DEFINED IN src/main.js */
-      this.$http.plain.post(
-        '/signup',
-        { email: this.email, password: this.password, confirm_password: this.confirm_password }
-      ).then(response => this.signinSuccessful(response)).catch(error => this.signinFailed(error))
+      this.$http.plain.post('/signup', { email: this.email, password: this.password, password_confirmation: this.password_confirmation })
+        .then(response => this.signupSuccessful(response))
+        .catch(error => this.signupFailed(error))
     },
-    signinSuccessful (response) {
+    signupSuccessful (response) {
       if (!response.data.csrf) {
         /* BACK OUT IF CSRF DOESN'T MATCH */
-        this.signinFailed(response)
+        this.signupFailed(response)
         return
       }
 
@@ -75,7 +74,7 @@ export default {
       /* REDIRECT */
       this.$router.replace('/records')
     },
-    signinFailed (error) {
+    signupFailed (error) {
       this.error = (error.response && error.response.data && error.response.data.error) || 'Something went wrong'
       delete localStorage.csrf
       delete localStorage.signedIn

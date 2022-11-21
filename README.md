@@ -164,11 +164,27 @@ Then import vue-axios to main.js
 In recordstore-frontend/src backend/axios/index.js was created.
 
 ==================================================================================
->>> CREATING FIRST VUE COMPONENT
+>>> CREATING VUE COMPONENTS
 ==================================================================================
-Start on adding new route to recordstore-frontend/src/router/index.js for Signin.vue.
+Start on adding new route to recordstore-frontend/src/router/index.js for Signin.vue. 
+Signup.vue and Header.vue was created.
 
 ==================================================================================
->>> CREATING ARTIST VUE COMPONENT
+>>> IT's DEBUGGING TIME!
 ==================================================================================
-Signup.vue and Header.vue was created.
+NOTE: The end was rubbish, read the comments on the final video and look for some helpful comments
+I know this is bullshit, so I'll be writing this part of Readme so you won't spent lots of time trying to debug and run it.
+
+1.) First thing I fix was recordstore-frontend/src/main.js.
+2.) We don't have redis but this application uses redis to store the JWT. Here is the following sources that you can use to download Redis but note that I am a Windows 10 User so the source that I'll be giving might not relevant to you:
+Tutorial Guide:
+https://www.youtube.com/watch?v=6mtu_dFxm28
+Where to download Redis:
+https://github.com/microsoftarchive/redis/releases
+
+Note for #2: You don't have to follow the tutorial video until the end, the only thing you need to do is run the redis-server.exe then this app will work again.
+
+3.) You will try saving your first record, if an internal error was thrown go to records_controller.rb and find the if @record.save. Once you see it, remove ", location: @record" in "render json: @record, status: :created, location: @record"
+
+You can see the source code of the tutorial that we're following on this experiment right here:
+https://github.com/justalever/recordstore/blob/master/app/controllers/api/v1/records_controller.rb

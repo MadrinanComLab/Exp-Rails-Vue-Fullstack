@@ -12,7 +12,7 @@ class SigninController < ApplicationController
             payload = { user_id: user.id } 
             
             # refresh_by_access_allowed: true MEANS THAT IF SOMETHING WENT WRONG, REFRESH THEN MAKE THE USER SIGN IN AGAIN
-            session = JWTSession::Session.new(payload: payload, refresh_by_access_allowed: true)
+            session = JWTSessions::Session.new(payload: payload, refresh_by_access_allowed: true)
             tokens = session.login
             response.set_cookie(
                 JWTSessions.access_cookie,

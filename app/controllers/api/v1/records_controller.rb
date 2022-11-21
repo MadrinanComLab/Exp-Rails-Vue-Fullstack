@@ -23,7 +23,7 @@ module Api
                 @record = current_user.records.build(record_params)
         
                 if @record.save
-                    render json: @record, status: :created, location: @record
+                    render json: @record, status: :created
                 else
                     render json: @record.errors, status: :unprocessable_entity
                 end
