@@ -28,9 +28,7 @@ Some modification was made in migration file for User model and after that we ru
 
 In app/models/user.rb, has_secure_password was added on that.</br></br>
 
-==================================================================================</br>
-## GENERATING SCAFFOLDS AND PREPARING THE CONTROLLERS</br>
-==================================================================================</br>
+## GENERATING SCAFFOLDS AND PREPARING THE CONTROLLERS
 After these changes, the person in the tutorial wants to add a controller but he does scaffold instead: (Controller will come along in this command)
 Rails Command
 -------------------------------------------------|
@@ -38,17 +36,17 @@ rails g scaffold Artist name:string user:references|</br></br>
 rails g scaffold Record title:string year:string artist:references user:references|</br></br>
 
 ***NOTE:*** We can undo the generated file for example, undoing the rails g Scaffold Artist name, you can run the following command:
-rails d Scaffold 
+Rails Command
+-------------------------------------------------|
+rails d Scaffold|</br>
 
-After generating the two scaffolds, we created api/v1 in controller (I know you are familiar with this from previous experiments). Move the generated controller by scaffold the api/v1. Also cover the controller by "module", you'll see that in the code snippet
+After generating the two scaffolds, we created api/v1 in controller (I know you are familiar with this from previous experiments). Move the generated controller by scaffold the api/v1. Also cover the controller by "module", you'll see that in the code snippet</br>
 
-NOTE: Something notable you can observe in the generated controller from scaffold. You can see the return statements are fixed in a way of how API would work, return data in JSON format.
+***NOTE:*** Something notable you can observe in the generated controller from scaffold. You can see the return statements are fixed in a way of how API would work, return data in JSON format.</br></br>
 
-==================================================================================
->>> JWT SESSIONS SETUP
-==================================================================================
-The documentation that the tutorial refers to:
-https://github.com/tuwukee/jwt_sessions
+## JWT SESSIONS SETUP
+The documentation that the tutorial refers to:</br>
+https://github.com/tuwukee/jwt_sessions </br>
 
 First we make some changes in controller/application_controller.rb. Then we created the jwt_sessions.rb in config/initializers. And then, uncomment the necessary code snippet in cors.rb in config/initializers also.
 
