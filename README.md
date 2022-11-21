@@ -14,8 +14,25 @@ November 14, 2022 </br>
 </p>
 
 ## How to run this project:
-1.) You need Ruby and Rails installed to your machine, once it was done run rails s and this is how it look like if the command succeed:
-![run-rails](https://user-images.githubusercontent.com/74145874/203152796-eae44a00-a8a2-4df5-92e0-5bd4b97c7c87.png)
+***1.)*** You need Ruby and Rails installed to your machine, once it was done run rails s and this is how it look like if the command succeed:</br>
+![run-rails](https://user-images.githubusercontent.com/74145874/203152927-7a67dd68-b65b-4eb8-9d5e-f3d5f556f37e.png)
+
+***2.)*** You need to install Vue JS to your machine, once it was done go to your copy of this project then:
+NPM Command
+-------------------------------------------------|
+cd recordstore-frontend|
+npm run dev|</br>
+
+This is how it look like if the command succeed:</br>
+![run-vue](https://user-images.githubusercontent.com/74145874/203153644-0879ad28-41ea-44ad-a692-1dd743864280.png)
+
+***3.)*** You need to install Redis to your machine, open the redis-server.exe:</br>
+![redis-server](https://user-images.githubusercontent.com/74145874/203154009-50d6f454-e249-4f5c-8e0d-8f96024f81a0.png)
+
+***4.)*** [OPTIONAL] In case that you want to modify the design of your copy of this project using tailwind, to watch these changes run the following:</br>
+![watch-tailwind](https://user-images.githubusercontent.com/74145874/203154184-110cd133-65be-48d8-ac18-f672f2252ace.png) </br></br>
+
+***NOTE:*** I want to apologize if I wasn't able to provide resources on how to install the mentioned technologies needed by this app. Installation of Redis was mentioned below, look for "IT'S DEBUGGING TIME", that is where I mentioned it. Thank you!</br>
 
 ## Here is the following steps that how I created this project:
 ### SETTING UP RAILS API
@@ -190,7 +207,7 @@ In recordstore-frontend/src backend/axios/index.js was created. </br>
 Start on adding new route to recordstore-frontend/src/router/index.js for Signin.vue. </br>
 Signup.vue and Header.vue was created.</br>
 
-### IT's DEBUGGING TIME!
+### IT'S DEBUGGING TIME!
 ----
 ***NOTE:*** The final video was rubbish, read the comments on the final video and look for some helpful comments</br>
 I know this is bullshit, so I'll be writing this part of Readme so you won't spent lots of time trying to debug and run it.</br>
