@@ -81,39 +81,41 @@ npm i -g @vue/cli-init|</br>
 
 The following question will appear just do the following:</br>
 ***Q:*** Project name (recordstore-frontend)</br>
-***A:*** Press 'Enter'
-***Q:*** Project description (A Vue.js project)
-***A:*** A Vue.js front-end app for a Ruby on Rails API backend app. 
-***Q:*** Author (MadrinanComLab <johncliffordmadrinan838@gmail.com>)
-***A:*** Press 'Enter' in my case but you can type out whatever Name and Email you want to use
-***Q:*** Runtime-only: about 6KB lighter min+gzip, but templates (or any Vue-specific HTML) are ONLY allowed in .vue files - render functions are required elsewhere
-***A:*** Press 'Enter'
-***Q:*** Install vue-router? (Y/n)
-***A:*** Y
-***Q:*** Use ESLint to lint your code? (Y/n) 
-***A:*** Y
-***Q:*** Pick an ESLint preset (Use arrow keys)
-***A:*** Pick "Standard", Ex.: Standard (https://github.com/standard/standard)
-***Q:*** Set up unit tests (Y/n)       
-***A:*** Y
-***Q:*** Pick a test runner
-***A:*** Karma and Mocha
-***Q:*** Setup e2e tests with Nightwatch? (Y/n) 
-***A:*** n
-***Q:*** Should we run `npm install` for you after the project has been created? (recommended)
-***A:*** Yes, use NPM | NOTE: The tutorial uses Yarn so he pick yarn but since I was using NPM, I pick NPM
+***A:*** Press 'Enter'</br>
+***Q:*** Project description (A Vue.js project)</br>
+***A:*** A Vue.js front-end app for a Ruby on Rails API backend app. </br>
+***Q:*** Author (MadrinanComLab <johncliffordmadrinan838@gmail.com>)</br>
+***A:*** Press 'Enter' in my case but you can type out whatever Name and Email you want to use</br>
+***Q:*** Runtime-only: about 6KB lighter min+gzip, but templates (or any Vue-specific HTML) are ONLY allowed in .vue files - render functions are required elsewhere</br>
+***A:*** Press 'Enter'</br>
+***Q:*** Install vue-router? (Y/n)</br>
+***A:*** Y</br>
+***Q:*** Use ESLint to lint your code? (Y/n) </br>
+***A:*** Y</br>
+***Q:*** Pick an ESLint preset (Use arrow keys)</br>
+***A:*** Pick "Standard", Ex.: Standard (https://github.com/standard/standard)</br>
+***Q:*** Set up unit tests (Y/n)</br>
+***A:*** Y</br>
+***Q:*** Pick a test runner</br>
+***A:*** Karma and Mocha</br>
+***Q:*** Setup e2e tests with Nightwatch? (Y/n) </br>
+***A:*** n</br>
+***Q:*** Should we run `npm install` for you after the project has been created? (recommended)</br>
+***A:*** Yes, use NPM | NOTE: The tutorial uses Yarn so he pick yarn but since I was using NPM, I pick NPM</br></br>
 
-After answering the question, the vue folder will be created. To run the frontend enter the following command:
-cd recordstore-frontend
-npm run dev
+After answering the question, the vue folder will be created. To run the frontend enter the following command:</br>
+NPM Command
+-------------------------------------------------|
+cd recordstore-frontend|
+npm run dev|</br>
 
-You app will be on: http://localhost:8080/
+You app will be on: http://localhost:8080/ </br>
 
-NOTE: Since the Vue app will be on port 8080, we have to modify the config/initializers/cors.rb. In there the request will be allowed from localhost:8081, but that is the port in the tutorial, mine was on 8080 so I have to change the cors.rb from 8081 to 8080
+***NOTE:*** Since the Vue app will be on port 8080, we have to modify the config/initializers/cors.rb. In there the request will be allowed from localhost:8081, but that is the port in the tutorial, mine was on 8080 so I have to change the cors.rb from 8081 to 8080
 
-ANOTHER NOTE: From this and beyond, while working on recordstore-frontend use single quote for strings because double quote for strings is against the rule of ESLint. I'm giving an emphasis to this because if you are like me that used to using double quote for strings.
+***ANOTHER NOTE:*** From this and beyond, while working on recordstore-frontend use single quote for strings because double quote for strings is against the rule of ESLint. I'm giving an emphasis to this because if you are like me that used to using double quote for strings.
 
-FVCKIN' NOTE: DO NOT USE ESLINT AT ALL, IT WILL GIVE YOU A HELL
+***FVCKIN' NOTE:*** DO NOT USE ESLINT AT ALL, IT WILL GIVE YOU A HELL
 
 ==================================================================================
 >>> SETTING UP THE TAILWIND CSS
