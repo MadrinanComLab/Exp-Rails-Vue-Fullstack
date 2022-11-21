@@ -1,6 +1,6 @@
 # Ruby on Rails (RoR) + Vue JS Experiment
-Tutorial Source: https://www.youtube.com/watch?v=TBZwkWznhZs&list=PLQIWx2J-GIASpN2yzAtdwoxILS7qld1XJ&index=2
-November 14, 2022
+Tutorial Source: https://www.youtube.com/watch?v=TBZwkWznhZs&list=PLQIWx2J-GIASpN2yzAtdwoxILS7qld1XJ&index=2 </br>
+November 14, 2022 </br> </br>
 
 =========================================================================== </br>
 ## SETTING UP RAILS API </br>
