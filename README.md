@@ -3,6 +3,11 @@
 Tutorial Source: https://www.youtube.com/watch?v=TBZwkWznhZs&list=PLQIWx2J-GIASpN2yzAtdwoxILS7qld1XJ&index=2 </br>
 November 14, 2022 </br>
  </br>
+ 
+ ## Technologies used in this Project:
+ <p>
+ <img src="https://user-images.githubusercontent.com/74145874/203150268-0c0e6843-af70-4705-b232-d6ef740f3090.png" width="100px" height="100px" alt="HTML" title="HTML"/>
+</p>
 
 ## Here is the following steps that how I created this project:
 ### SETTING UP RAILS API
