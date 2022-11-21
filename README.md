@@ -19,18 +19,15 @@ rake db:create|</br></br>
 
 There's a big possibility that an error will occur, but check pgAdmin and check if the expected database was created. If it wasn't there, mind the error and look for possible solution.</br>
 
--------------- END OF POSTRESQL AND API CONFIGURATION --------------</br></br>
-
 ==================================================================================</br>
 ## ADDITIONAL SETUPS BASE ON THE TUTORIAL</br>
 ==================================================================================</br>
 Base on the tutorial, additional libraries will be needed and was added on Gemfile. There's a comment on it so you'll see it easily. After adding it run the command bundle.
+</br></br>
 
--------------- END OF ADDITIONAL SETUPS --------------
-
-==================================================================================
->>> GENERATING THE USER MODEL
-==================================================================================
+==================================================================================</br>
+## GENERATING THE USER MODEL</br>
+==================================================================================</br>
 Generate user model with email and password_digest. It says that password_digest is for encrypted password (?).
 
 Some modification was made in migration file for User model and after that we run rails db:migrate
