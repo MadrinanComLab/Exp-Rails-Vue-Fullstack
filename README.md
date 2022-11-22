@@ -13,6 +13,9 @@ November 14, 2022 </br>
  <img src="https://user-images.githubusercontent.com/74145874/203151709-b137020a-06b0-4853-a95a-2ce77c86b918.png" width="100px" height="100px" alt="Redis" title="Redis"/>
 </p>
 
+## Application Demo: https://youtu.be/LnqB9IZA7jI
+![Rails + Vue Experiment Thumbnail](https://user-images.githubusercontent.com/74145874/203427128-cfa62f33-5939-4020-81b3-a788345db7ab.jpg)
+
 ## How to run this project:
 ***1.)*** You need Ruby and Rails installed to your machine, once it was done run rails s and this is how it look like if the command succeed:</br>
 ![run-rails](https://user-images.githubusercontent.com/74145874/203152927-7a67dd68-b65b-4eb8-9d5e-f3d5f556f37e.png)
