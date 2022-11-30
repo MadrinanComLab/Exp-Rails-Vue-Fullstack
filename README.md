@@ -192,6 +192,8 @@ The problem is, it will generate a few hundred lines of code in output.css, wher
 ***Another note:*** (My apologies if there a lot of fvckin' note)</br>
 Sometimes, tailwind utility classes may not work even it was present in output.css, but try restarting your Vue app and see if the style of your component changes. If not, look for solution on the internet.</br>
 
+***Another note:*** Do not forget to import the input.css (or whatever you named it. It was the css file on recordstore-frontend/src) to recordstore-frontend/src/main.js
+
 ### SETTING UP VUE-AXIOS
 ----
 To install in run:
